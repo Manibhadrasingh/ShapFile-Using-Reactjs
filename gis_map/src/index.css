@@ -1,0 +1,131 @@
+
+/* Map container styling */
+.map-container {
+  width: 70%; /* Maintain focus on the map */
+  height: 100%;
+  position: relative;
+  border-right: 2px solid #ddd;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* File upload section styling */
+.file-upload-section {
+  width: 30%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-left: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.file-upload-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Label and input styling */
+.file-upload-section label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.file-upload-section input[type="file"] {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.file-upload-section input[type="file"]:hover {
+  border-color: #007BFF;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+}
+
+/* Buttons styling */
+.file-upload-section button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.file-upload-section button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 91, 179, 0.2);
+}
+
+.file-upload-section button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Clear button alternate style */
+.file-upload-section button:nth-child(2) {
+  background-color: #6c757d;
+}
+
+.file-upload-section button:nth-child(2):hover {
+  background-color: #545b62;
+}
+
+/* Table styling for properties */
+.file-upload-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.file-upload-section table th,
+.file-upload-section table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.file-upload-section table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.file-upload-section table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Styling for hover and active map effect */
+.map-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 50%;
+  }
+
+  .file-upload-section {
+    width: 100%;
+    height: 50%;
+    border-left: none;
+    border-top: 2px solid #ddd;
+  }
+}
